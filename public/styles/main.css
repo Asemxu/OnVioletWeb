@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+body{
+    font-family: Montserrat , sans-serif;
+}
+/* color del navbar */
+#navbar__main{
+    padding-top:-10px;
+    background-color: #f17c22;
+    max-height: 65px;
+    -webkit-box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+    box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+}
+
+#img__main{
+    height: 50px;
+    max-height: 100%;
+    padding:5px;
+    margin-right: 18px;
+}
+.btn_hamburger_menu{
+    display:none;
+}
+span{
+    display: block;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: all 300ms ease-in;
+    transform-origin:left center;
+}
+
+span:first-child{
+    margin-top: 5px;
+}
+
+@media screen and (max-width:767px){
+    .btn_hamburger_menu{
+      display: inline-block;
+    }
+
+    #middle_items{
+        margin: auto;
+        transition: margin 2s;
+    }
+    .links__list , .social__list{
+        background-color: white;
+    }
+    ul > .nav-item > .nav-link{
+        color:black!important;
+    }
+    .follow{
+        background-color: #f17c22 ;
+    }
+}
+ul > .nav-item{
+    text-transform: uppercase;
+    padding-top: 7.5px  ;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 30px;
+    font-weight: 750;
+    letter-spacing: 2px;
+    text-align: center;
+}
+ul > .nav-item > .nav-link{
+    color:white;
+}
+ul > .nav-item > .nav-link:hover{
+    opacity: 0.6;
+}
+
+.socials__img{
+    text-align: center;
+    width: 30px;
+}
+.socials__items{
+    text-align: center;
+}
+.links__list{
+    border-radius: 5px 5px 0px 0px;
+}
+.social__list{
+    border-radius: 0px 0px 5px 5px;
+}
+footer{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #253b48;
+}
+
+.follow{
+    margin:auto;
+    display:none;
+}
+.btn_registro_login{
+    text-decoration: none;
+    right: 20px;
+    padding: 10px;
+    bottom: 20px;
+    display: flex;
+    background-color: #7e93fc;
+    width: auto;
+    height: 50px;
+    border-radius: 5%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    -webkit-box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+    -moz-box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+    box-shadow: -5px 49px 70px -20px rgba(0,0,0,0.8);
+}
+.btn_registro_login > h6{
+    font-size: 15px;
+    font-weight:750;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+#image_btn_registro_login{
+    width: 30px;
+    margin-right: 10px;
+    height: 30px;
+}
+.open span:first-child{
+    transform:rotate(45deg);
+}
+.open span:nth-child(2){
+    opacity: 0;
+}
+
+.open span:last-child{
+    transform: rotate(-45deg);
+}
+
+.btn_registro_login:hover{
+    background-color: #2267FC;
+    text-decoration: none;
+}

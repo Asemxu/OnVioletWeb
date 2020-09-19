@@ -1,0 +1,29 @@
+.intro-header{
+    height: 100vh;
+    display:flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed5f9396170c96aef0643e6_cover.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #fff;
+}
+.intro__content{
+    margin-bottom:20px;
+    width: 70%;
+    max-width: 1140px;
+    text-align: center;
+}
+.intro__content > h1 , h3 {
+    margin-bottom: 25px;
+}
+.intro__content > h1{
+    font-weight: 1000;
+}

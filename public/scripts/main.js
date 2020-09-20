@@ -1,16 +1,18 @@
 //development
-const CarpetaViews = "/public/views/";
+//const CarpetaViews = "/public/views/";
 //production
-//const CarpetaViews = "views/";
+const CarpetaViews = "views/";
 var intro_content = document.querySelector(".intro__content");
-
 var span_follow = document.getElementsByClassName("follow");
 var btn_hamburger = document.querySelector(".btn_hamburger_menu");
 const link_views = document.getElementsByClassName("link__views");
 var container_views = document.getElementById("container_data_views");
 var span_hambuerger = document.getElementsByClassName("hamburger");
 var injected_script = document.getElementById("injected_script");
+var fecha_element = document.getElementById("fecha");
+var fecha = new Date().getFullYear();
 
+var fecha_footer = "© All Rights Reserved"; 
 const Home = "home.html";
 const About = "about.html";
 const Contact = "contactanos.html";
@@ -25,6 +27,8 @@ const Faq_number = 2;
 const Help_number = 3;
 const Views_html = [About,Faq,Contact,Help,Home];
 
+
+fecha_element.innerText = fecha_footer +" " +fecha;
 
 Object.entries(link_views).forEach(([key,element])=>{
     element.addEventListener('click',function(){    

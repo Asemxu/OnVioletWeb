@@ -1,0 +1,24 @@
+{
+  "name": "onviolet",
+  "version": "1.0.0",
+  "description": "Aplicacion Web",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "rfs": "^9.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asemxu/OnVioletWeb.git"
+  },
+  "author": "Renzo Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asemxu/OnVioletWeb/issues"
+  },
+  "homepage": "https://github.com/Asemxu/OnVioletWeb#readme"
+}

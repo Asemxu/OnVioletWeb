@@ -1,2 +1,2 @@
 
-window.history.pushState(null,"","home");
+//window.history.pushState(null,"","home");

@@ -2,6 +2,10 @@
 
 body{
     font-family: Montserrat , sans-serif;
+    overflow-x: hidden;
+}
+a{
+    color:white
 }
 /* color del navbar */
 #navbar__main{
@@ -55,6 +59,11 @@ span:first-child{
         background-color: #f17c22 ;
     }
 }
+@media  screen and (max-width:300px){
+    #img__main{
+        height: 30px;
+    }
+}
 ul > .nav-item{
     text-transform: uppercase;
     padding-top: 7.5px  ;
@@ -72,9 +81,10 @@ ul > .nav-item > .nav-link:hover{
     opacity: 0.6;
 }
 
-.socials__img{
+.socials__img , .socials_img_footer{
     text-align: center;
     width: 30px;
+    transition: tranform 1s;
 }
 .socials__items{
     text-align: center;
@@ -87,10 +97,13 @@ ul > .nav-item > .nav-link:hover{
 }
 footer{
     color: white;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     background-color: #253b48;
+}
+.footer_container{
+    padding: 30px;
 }
 
 .follow{
@@ -100,6 +113,7 @@ footer{
 .btn_registro_login{
     text-decoration: none;
     right: 20px;
+    cursor: pointer;
     padding: 10px;
     bottom: 20px;
     display: flex;
@@ -141,4 +155,34 @@ footer{
 .btn_registro_login:hover{
     background-color: #2267FC;
     text-decoration: none;
+}
+
+.first_column , .second_column{
+    margin-bottom: 20px;
+}
+#container_data_views{
+    overflow: hidden;
+}
+.lista_footer_contact{
+    list-style:none;
+}
+.lista_footer_contact{
+    font-size: 15px;
+}
+.lista_footer_contact li:hover{
+	margin-left:5px;
+    font-weight:700;
+}
+.socials__img:hover{
+    transform: scale(1.5);
+    color:rgb(77, 77, 226);
+}
+
+.socials_img_footer:hover{
+    transform: scale(1.5);
+    color:rgb(77, 77, 226);
+}
+.policity{
+    background-color: #333333;
+    padding: 5px;
 }

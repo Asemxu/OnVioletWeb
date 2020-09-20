@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OnViolet</title>
+    <title>OnViolet - Te Protége</title>
     <meta name="description" content="Aplicación OnViolet">
     <link rel="shortcut icon" href="https://fotos.subefotos.com/1c4f4e1e8523d877260c0d087cf972a8o.png">
     <link rel="stylesheet"  href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
     <style type="text/css">
         *{ 
             margin:0; 
@@ -74,21 +75,50 @@
         <section id="container_data_views">
 
         </section>
-        <a href="#" class="btn_registro_login">
+        <a class="btn_registro_login">
             <img id="image_btn_registro_login" src="image/login_register.png"/>
             <h6>Inicio/Registro</h6>
         </a>
     </main>
     <footer>
-        <div class="container">
+        <div class="container footer_container">
             <div class="row">
-                <div class="col-sm-5">
-                    primera
+                <div class="col-sm-5 first__column">
+                    <h4>Contáctanos</h2>
+                        <ul class="lista_footer_contact">    
+                            <li>
+                                <a href="mailto:Elkimimar@gmail.com">Elkimimar@gmail.com</a>
+                            </li>
+                            <li>Av Aurelio Pastor Cueva k-11</li>
+                            <li>Cajamarca</li>
+                            <li>Peru</li>
+                            <li id="fecha"></li>
+                        </ul>
                 </div>
-                <div class="col-sm-7">
-                    segunda
+                <div class="col-sm-7 second__column">
+                    <h3>Redes Sociales</h3>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="socials__items">
+                            <a href="#" class="nav-link">
+                                <img class="socials_img_footer" src="https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed6292e7df0e66433942ae4_facebook.svg"/>
+                            </a>
+                        </li>
+                        <li class="socials__items">
+                            <a href="#" class="nav-link">
+                                <img class="socials_img_footer" class="socials" src="https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed629382e00bf3e137a0204_twitter.svg"/>
+                            </a>
+                        </li>
+                        <li class="socials__items">
+                            <a href="#" class="nav-link">
+                                <img class="socials_img_footer" src="https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed629342164d471b8b3033c_instagram.svg"/>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+        <div class="policity">
+            <a href="#">Politicas y Privacidad</a>
         </div>
     </footer>
     <script src="scripts/jquery.min.js"></script>

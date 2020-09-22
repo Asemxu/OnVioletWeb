@@ -17,6 +17,12 @@
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
+    <div class="load_page_initial">
+        <div class="spinner-grow text-primary" id="spinner" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <header>
         <nav class="navbar fixed-top navbar-expand-md" id="navbar__main">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
@@ -121,10 +127,11 @@
             <a href="#">Politicas y Privacidad</a>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script id="injected_script"></script>
-
     <script src="scripts/main.js"></script>
     <script id="injected_script"></script>
 

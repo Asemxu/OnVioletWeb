@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "firebase": "^7.21.0",
     "rfs": "^9.0.3"
   },
   "devDependencies": {},

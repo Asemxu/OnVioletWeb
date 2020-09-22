@@ -1,0 +1,83 @@
+{
+  "Niveles_Arduino" : {
+    "Nivel" : 16
+  },
+  "Recomendaciones" : {
+    "Alto" : [ null, {
+      "descripcion" : "Reduzca el tiempo al sol entre las 10 a. m y las 4 p. m.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/676/PNG/512/alarm-clock_icon-icons.com_60726.png",
+      "titulo" : "Menos Tiempo"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/1465/PNG/512/434womanshat_100882.png",
+      "titulo" : "Protegerse siempre es Importante"
+    }, {
+      "descripcion" : "plíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Mucho Mas Bloqueador"
+    } ],
+    "Bajo" : [ null, {
+      "descripcion" : "Puedes estar al aire libre con mínima protección",
+      "imagen" : "https://cdn.icon-icons.com/icons2/516/PNG/512/sleep_umbrella_vacation_icon-icons.com_51082.png",
+      "titulo" : "No te preocupes"
+    }, {
+      "descripcion" : "Utilice anteojos de sol los días de sol brillante.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/604/PNG/512/travel_journey-06_icon-icons.com_56010.png",
+      "titulo" : "Lentes en el Día"
+    }, {
+      "descripcion" : "Si se quema con facilidad, cúbrase y use un protector solar de amplio espectro SPF 30+.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/2179/PNG/512/summer_sun_screen_sunscreen_sunblock_block_bathing_icon_133415.png",
+      "titulo" : "Usa Bloqueador"
+    }, {
+      "descripcion" : "Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/1814/PNG/512/27beach_115458.png",
+      "titulo" : "Superficies Brillantes"
+    } ],
+    "Extremo" : [ null, {
+      "descripcion" : "Como los niveles de radiación son muy altos es recomendable salir solo si es necesario",
+      "imagen" : "https://cdn.icon-icons.com/icons2/624/PNG/512/Private-80_icon-icons.com_57286.png",
+      "titulo" : "Solo si es necesario"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV",
+      "imagen" : "https://cdn.icon-icons.com/icons2/1465/PNG/512/434womanshat_100882.png",
+      "titulo" : "Use aun mas protección"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Tu Piel es Muy Importante Cuídala"
+    } ],
+    "Moderado" : [ null, {
+      "descripcion" : "Permanezca a la sombra cerca del mediodía, cuando el sol está más fuerte.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/2179/PNG/512/summer_vacation_beach_umbrella_parasol_shade_relax_icon_133418.png",
+      "titulo" : "Áreas Sombrías"
+    }, {
+      "descripcion" : "Si está al aire libre, utilice ropa de protección, un sombrero de ala ancha, gorros  y gafas de sol que bloqueen los rayos UV.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/1639/PNG/512/12204billedcap_109548.png",
+      "titulo" : "Gorros y Lentes"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://cdn.icon-icons.com/icons2/2179/PNG/512/summer_sun_screen_sunscreen_sunblock_block_bathing_icon_133426.png",
+      "titulo" : "Siempre Bloqueador"
+    } ],
+    "Muy_Alto" : [ null, {
+      "descripcion" : "Minimice la exposición al sol entre las 10 a. m. y las 4 p. m.",
+      "imagen" : "https://fotos.subefotos.com/813df8de689c111f677a20f3ce8b2f68o.png",
+      "titulo" : "Menos Tiempo aun"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV",
+      "imagen" : "https://cdn.icon-icons.com/icons2/1465/PNG/512/434womanshat_100882.png",
+      "titulo" : "Use aun mas protección"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Cuida tu piel"
+    } ]
+  },
+  "users" : {
+    "irQi0cADzSVKqLL2JHt2yHe4OE83" : {
+      "contraseña" : "mifamilia4",
+      "correo" : "renzojimenezalfarotrabajos@gmail.com",
+      "nombres" : "Renzo Jimenez Alfaro"
+    }
+  }
+}

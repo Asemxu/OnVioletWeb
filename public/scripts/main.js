@@ -11,6 +11,7 @@ var span_hambuerger = document.getElementsByClassName("hamburger");
 var injected_script = document.getElementById("injected_script");
 var fecha_element = document.getElementById("fecha");
 var fecha = new Date().getFullYear();
+var overlay = document.querySelector(".overlay");
 
 var fecha_footer = "© All Rights Reserved"; 
 const Home = "home.html";
@@ -26,6 +27,9 @@ const Contact_number = 1;
 const Faq_number = 2;
 const Help_number = 3;
 const Views_html = [About,Faq,Contact,Help,Home];
+
+const firebaseConfig={apiKey:"AIzaSyBeRXgPHpwxDOqAC8ww5KcL65vhl3_HU_U",authDomain:"radiacionuv-8196c.firebaseapp.com",databaseURL:"https://radiacionuv-8196c.firebaseio.com",projectId:"radiacionuv-8196c",storageBucket:"radiacionuv-8196c.appspot.com",messagingSenderId:"478377739382",appId:"1:478377739382:web:10da4d5a894c5a37e7cb57",measurementId:"G-4K1SEQ7JX4"};
+firebase.initializeApp(firebaseConfig);
 
 
 fecha_element.innerText = fecha_footer +" " +fecha;
@@ -48,18 +52,23 @@ function CleanLinkViews(number_view){
 
 btn_hamburger.addEventListener('click',function(){
     if(btn_hamburger.classList.contains('open')){
+        overlay.style.opacity = 0;
+        overlay.style.zIndex = 0;
         btn_hamburger.classList.remove('open');
         Object.entries(span_hambuerger).forEach(([key,element])=>{
             element.style.removeProperty("margin-left");
         }); 
     }else{
         btn_hamburger.classList.add('open');
+        overlay.style.opacity = 0.5;
+        overlay.style.zIndex = 1;
         Object.entries(span_hambuerger).forEach(([key,element])=>{
             element.style.marginLeft = "5px";
         }); 
     }
 });
 window.onload = function(){
+    $(".load_page_initial").fadeOut('slow'); 
     CargarVista(CarpetaViews+Home);
 }
 function CargarVista(file){

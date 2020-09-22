@@ -49,3 +49,149 @@
     opacity: 0.75;
     color: white;
 }
+.indice_uv{
+    padding: 50px;
+}
+.titulo_indice_uv{
+    width: 100%;
+    text-align: center;
+    font-weight: 1000;
+}
+.titulo_indice_uv h1{
+    margin: auto;
+}
+.indice_uv p{
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 15px;
+    margin: 30px;
+}
+.titulo_indice_uv{
+    display: flex;
+}
+.img_title_uv{
+    width: 10%;
+    height: 10%;
+}
+@media screen and (max-width:800px){
+    .img_title_uv{
+        width: 20%;
+        height: 20%;
+    }
+}
+.btn-link{
+    color:white!important;
+    display: inline-flex;
+    text-decoration: none!important;
+}
+.btn-link h3{
+    font-weight: 1000;
+}
+.accordion{
+    margin-bottom: 20px;
+}
+#header_bajo{
+    background-color: #83FB5F;
+}
+#header_moderado{
+    background-color: #FBED5F;
+}
+#header_alto{
+    background-color: #FBBE5F;
+}
+#header_muy_alto{
+    background-color: #FB5F5F;
+}
+#header_extremo{
+    background-color: #D35FFB;
+}
+.accordion>.card>.card-header{
+    margin-bottom: auto;
+}
+.row{
+    width: 100%;
+}
+.arrow{
+    text-align: center;
+}
+.img_recomendaciones{
+    width: 50px;
+    margin-left: 10px;
+    height: 50px;
+}
+.btn-link:hover{
+    text-decoration: none!important;
+}
+.img_up_down_recomendaciones{
+    width: 25px;
+    height: 25px;
+}
+img{
+    transition: all 300ms ease-in;
+    transform-origin:left center;
+}
+.up{
+    transform:rotateX(180deg);
+}
+.card-header{
+    padding: 0;
+}
+
+.card-body h5{
+    font-weight: 1000;
+    text-align: center;
+}
+.load_page{
+    text-align: center;
+    transition: all 1s ease-in;
+}
+.spinner{
+    margin:10px;
+    width: 5rem; height: 5rem;
+    opacity: 1;
+}
+.hidden{
+    opacity: 0;
+}
+.app_mobile{
+    margin-bottom: 75px;
+}
+.header_app_mobile{
+    text-align: center;
+    font-weight: 1000;
+}
+.header_app_mobile h2{
+    font-weight: 1000;
+}
+.header_app_mobile h6{
+    white-space: normal;
+    letter-spacing: 1px;
+
+}
+.section_download{
+    margin-top: 15px;
+    text-align: center;
+}
+.section_download .promotional{
+    width: 200px;
+    margin: 5%;
+    height: 400px;
+}
+.beneficios{
+    margin-bottom: 50px!important;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    -webkit-box-shadow: 9px 6px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 6px 24px 1px rgba(0,0,0,0.75);
+    box-shadow: 9px 6px 24px 1px rgba(0,0,0,0.75);
+}
+.list_beneficios{
+    text-align: center;
+}
+.list_beneficios h3{
+    font-weight: 1000;
+}
+.img_beneficios_2{
+    padding: 20px;
+}

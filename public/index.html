@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="https://fotos.subefotos.com/1c4f4e1e8523d877260c0d087cf972a8o.png">
     <link rel="stylesheet"  href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" id="style_home" href="styles/home.css">
     <style type="text/css">
         *{ 
             margin:0; 
@@ -19,7 +19,7 @@
 <body>
     <div class="overlay"></div>
     <div class="load_page_initial">
-        <div class="spinner-grow text-primary" id="spinner" role="status">
+        <div class="spinner-border text-danger" id="spinner" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -81,10 +81,49 @@
         <section id="container_data_views">
 
         </section>
-        <a class="btn_registro_login">
+        <a class="btn_registro_login" data-toggle="modal" data-target="#modal_login">
             <img id="image_btn_registro_login" src="image/login_register.png"/>
             <h6>Inicio/Registro</h6>
         </a>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="modal_login" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="titulo_modal">Inicio Sesión</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <center><img src="image/user.png" /></center>
+                    <form id="form_inicio_sesion">
+                        <center>
+                            <div class="spinner-border text-danger" id="spinner_login_registro" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>     
+                        </center>              
+                        <div id="container_inputs">
+                            <div class="form-group"><label for="exampleInputEmail1">Correo Electronico</label>
+                                <input class="form-control" autocomplete="additional-name" id="email" type="email" aria-describedby="emailHelp" name="correo" required="required" placeholder="Ingrese Correo" />
+                                <h5 id="error_email"></h5>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input class="form-control" id="pass" autocomplete="current-password" type="password" placeholder="Contraseña" name="password" required="required" />
+                                <h5 id="error_pass"></h5>
+                            </div>
+                        </div>
+                        <center><button class="btn btn_indice btn_inicio">Iniciar Sesión</button></center>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn_registro" href="#" style="width:100%">Registrate</a>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
         <div class="container footer_container">
@@ -129,11 +168,11 @@
     </footer>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script id="injected_script"></script>
     <script src="scripts/main.js"></script>
-    <script id="injected_script"></script>
+    <script src="scripts/circle-progress.js"></script>
 
 </body>
 </html>

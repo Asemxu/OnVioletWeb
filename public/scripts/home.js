@@ -3,13 +3,11 @@
 const btn_indice = document.querySelector(".btn_indice");
 const duration = 750;
 var cards_header = document.getElementsByClassName("card-header");
-const object  = firebase.database().ref().child('/Recomendaciones');
 var show_bajo = false;
 var show_moderado = false;
 var show_alto = false;
 var show_muy_alto = false;
 var show_extremo = false;
-
 btn_indice.addEventListener('click',function(){
     $('html, body').animate({
         scrollTop: $(".indice_uv").offset().top
@@ -42,7 +40,7 @@ function GetDataRecomendaciones(type,element){
         .once('value')
         .then((snapshot) => { 
             var elemDiv = document.createElement('ul');
-            elemDiv.style.cssText= "padding-left: 20px;padding-right: 20px;list-style: circle";
+            elemDiv.style.cssText= "padding-left: 20px;padding-right: 20px;list-style: circle;text-align:left";
             Object.entries(snapshot.val()).forEach(([key,element])=>{
                 var row = document.createElement('li');
                 row.innerText = element.descripcion;

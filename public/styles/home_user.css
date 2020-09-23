@@ -1,0 +1,95 @@
+.user_section{
+    height: 100vh;
+    padding-bottom: 20px;
+    display:block;
+    background-color: #f4f4f4;
+    background-image: url(https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed5f9396170c96aef0643e6_cover.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #fff;
+}
+.options{
+    margin-top: 50px;
+    width: 100%;
+    height: 30px;
+    display: block
+}
+.options .row{
+    padding-top: 20px;
+    text-align: center;
+}
+.titulo_bienvenida{
+    font-weight: 1000;
+}
+.uv > .first{
+    text-align: center;
+}
+.uv > .second{
+    margin-top: 20px;
+}
+.demo{
+    margin-top: 30px;
+}
+.demo strong {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 100px;
+}
+.second h4{ 
+    font-weight: 1000;
+  }
+  .demo strong  h6{
+   margin-top: 40px;
+   font-size: 25px;
+  }
+@media screen and (max-width: 589px){
+    .uv > .first{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:387px){
+    .uv > .first{
+        margin-top: 60px;
+    }
+    .demo{
+        margin-top: 40px;
+    }
+    .demo canvas{
+        width: 200px;
+        height: 200px;
+    }
+    .demo strong{
+        font-size: 75px;
+    }
+    .demo strong  h6{
+        margin-top: 15px;
+        font-size: 17.5px;
+    }
+    .demo strong  h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:610px){
+    .uv > .second{
+        text-align: center;
+    }
+}
+#spinner_recomendaciones_indice{
+    width: 5rem; height: 5rem;
+    margin-top: 20px;
+}
+.card_recomendaciones_indice{
+    display: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media screen and (max-width:650px){
+    .user_section{
+        height: auto;
+    }
+}

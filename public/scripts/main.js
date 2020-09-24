@@ -32,6 +32,7 @@ var pass_error_registro = document.getElementById("error_pass_registro");
 var form_registro = document.getElementById("form_registro");
 var type = "";
 var fecha_footer = "© All Rights Reserved";
+var options = document.querySelector(".options");
 
 
 const Home = "home.html";
@@ -181,6 +182,9 @@ function Autentificacion(type,spinner,btn,pass,email){
     const auth = firebase.auth();
     if(type === "login"){
         auth.signInWithEmailAndPassword(email, pass).then(function(value) {
+            Object.entries(span_follow).forEach(([key,element])=>{
+                element.style.display = "none";
+            });
             container_inputs.style.display = "block";
             spinner.style.display = "none";
             email_error.innerText = "";
@@ -196,6 +200,9 @@ function Autentificacion(type,spinner,btn,pass,email){
         });       
     }else{
         auth.createUserWithEmailAndPassword(email, pass).then(function(value) {
+            Object.entries(span_follow).forEach(([key,element])=>{
+                element.style.display = "none";
+            });
             container_inputs_registro.style.display = "block";
             spinner.style.display = "none";
             email_error_registro.innerText = "";
@@ -264,6 +271,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     }else{
         current_view_number = Home_number;
         sleep(500).then(() => {
+            options.style.display = "none";
             LoadHomeUser(home_style,Home);
             btn_registro_login.style.display = "flex";
         });

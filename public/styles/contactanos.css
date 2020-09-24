@@ -1,0 +1,83 @@
+.intro-header_contact{
+    height: 100vh;
+    display:flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(https://uploads-ssl.webflow.com/5ed5e5febc49f02506fb30ff/5ed5f9396170c96aef0643e6_cover.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #fff;
+}
+
+.contact{
+    margin-top: 25px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.contact > .row{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.first_column_contact{
+    padding: 50px;
+}
+
+.first_column_contact > h5{
+    font-size: 36px;
+    font-weight: 1000;
+}
+.first_column_contact > p{
+    text-align: left;
+}
+.border-primary{
+    border-color: #eee!important;
+}
+
+@media screen and (max-width:359px){
+    .first_column_contact > h5{
+        font-size: 20px;
+    }
+    .first_column_contact > p{
+        font-size: 15px;
+    }
+}
+#spinner_contact{
+    margin-top: 20px;
+    width: 5rem;
+    display: none;
+    height: 5rem;
+}
+
+#check{
+    display: none;
+}
+
+.second_column_contact{
+    text-align: left;
+    padding-left: 50px;
+}
+.second_column_contact h3{
+    font-weight: 1000;
+}
+.second_column_contact ul{
+    margin-top: 20px;
+}
+.second_column_contact ul li{
+    margin-top: 10px;
+}
+@media screen and (max-width:580px){
+    .second_column_contact{
+        text-align: center;
+        margin-top: 30px;
+    }
+}

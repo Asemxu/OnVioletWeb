@@ -9,6 +9,7 @@
     <link rel="stylesheet"  href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" id="style_home" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contactanos.css"/>
     <style type="text/css">
         *{ 
             margin:0; 
@@ -46,7 +47,7 @@
                 </ul>
             </div>
             <div class="order-0" id="middle_items">
-                <a class="navbar-brand mx-auto link__views" href="#" value="4">
+                <a class="navbar-brand mx-auto link__views" id="img_main" value="4">
                     <img src="image/logo.png" id="img__main" />
                 </a>
                 
@@ -78,6 +79,19 @@
         </nav>
     </header>
     <main>
+        <header class="options">
+            <div class="row">
+                <div class="col-sm-9">
+                  <h5 class="nav-link titulo_bienvenida">
+                  </h5>
+                </div>
+                <div class="col-sm-3">
+                  <a class="nav-link" href="#" id="btn_logout">
+                      <img src="image/login_register.png" style="width: 50px;height: 50px;"/>
+                      Cerrar Sesión</a>
+                </div>
+            </div>
+      </header>
         <section id="container_data_views">
 
         </section>
@@ -140,7 +154,7 @@
                             <div class="spinner-border text-danger" id="spinner_registro" role="status">
                                 <span class="sr-only">Loading...</span>
                             </div>     
-                        </center>              
+                        </center>               
                         <div id="container_inputs_registro">
                             <div class="form-group"><label for="exampleInputnombres">Nombres y Apellidos</label>
                                 <input class="form-control" autocomplete="additional-name" id="nombres" type="text" aria-describedby="nombresHelp" name="nombres" required="required" placeholder="Ingrese Nombres y Apellidos" />
@@ -170,13 +184,14 @@
         <div class="container footer_container">
             <div class="row">
                 <div class="col-sm-5 first__column">
-                    <h4>Contáctanos</h2>
+                    <h2>Contáctanos</h2>
                         <ul class="lista_footer_contact">    
                             <li>
-                                <a href="mailto:Elkimimar@gmail.com">Elkimimar@gmail.com</a>
+                                <a href="mailto:Elkisoft.s3@gmail.com">Elkisoft.s3@gmail.com</a>
                             </li>
-                            <li>Av Aurelio Pastor Cueva k-11</li>
-                            <li>Cajamarca</li>
+                            <li>Dirección</li>
+                            <li>Jr. José Gálvez</li>
+                            <li>San Miguel - Cajamarca</li>
                             <li>Peru</li>
                             <li id="fecha"></li>
                         </ul>
@@ -207,6 +222,8 @@
             <a href="#">Politicas y Privacidad</a>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>

@@ -1,6 +1,7 @@
 var titulo_bienvenido = document.querySelector(".titulo_bienvenida");
 var btn_logout = document.getElementById("btn_logout");
 var loag_page_initial = document.querySelector(".load_page_initial");
+options.style.display = "block";
 const bajo = "Bajo";
 const moderado = "Moderado";
 const alto = "Alto";

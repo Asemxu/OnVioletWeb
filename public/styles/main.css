@@ -268,7 +268,7 @@ footer{
     padding-right: 10x!important;
     padding-bottom: 10px!important;
 }
-#error_email, #error_pass , #error_pass_registro , #error_email_registro{
+#error_email, #error_pass , #error_pass_registro , #error_email_registro , #error_email_contact{
     color:#FE7F7F;
     font-size: 15px;
     font-weight: 1000;
@@ -286,4 +286,8 @@ footer{
     width: 5rem;
     display: none;
     height: 5rem;
+}
+
+#img_main{
+    cursor: pointer;
 }

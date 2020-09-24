@@ -13,11 +13,11 @@ function InsertName(){
 }
 btn_logout.addEventListener('click',function(){
     var scripts = document.getElementsByClassName("injected");
-    scripts[0].remove();
     sleep(500).then(() => {
         firebase.auth().signOut().then(function() {
             location.reload();
             localStorage.removeItem("Nombres");
+            localStorage.clear();
         }).catch(function(error) {
             alert("Algo Paso ",error.message);
         });    

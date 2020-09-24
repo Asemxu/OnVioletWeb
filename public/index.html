@@ -91,7 +91,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="titulo_modal">Inicio Sesión</h5>
+                  <h5 class="modal-title titulo_modal">Inicio Sesión</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -119,7 +119,48 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn_registro" href="#" style="width:100%">Registrate</a>
+                    <a class="btn_registro" style="width:100%;cursor: pointer;" data-toggle="modal" data-target="#modal_registro">Registrate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal_registro" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title titulo_modal">Registro</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <center><img src="image/user.png" /></center>
+                    <form id="form_registro">
+                        <center>
+                            <div class="spinner-border text-danger" id="spinner_registro" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>     
+                        </center>              
+                        <div id="container_inputs_registro">
+                            <div class="form-group"><label for="exampleInputnombres">Nombres y Apellidos</label>
+                                <input class="form-control" autocomplete="additional-name" id="nombres" type="text" aria-describedby="nombresHelp" name="nombres" required="required" placeholder="Ingrese Nombres y Apellidos" />
+                                <h5 id="error_nombres_registro"></h5>
+                            </div>
+                            <div class="form-group"><label for="exampleInputEmail2">Correo Electronico</label>
+                                <input class="form-control" autocomplete="additional-name" id="email_registro" type="email" aria-describedby="emailHelp" name="email_registro" required="required" placeholder="Ingrese Correo" />
+                                <h5 id="error_email_registro"></h5>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword2">Contraseña</label>
+                                <input class="form-control" id="pass_registro" autocomplete="current-password" type="password" placeholder="Contraseña" name="password_registro" required="required" />
+                                <h5 id="error_pass_registro"></h5>
+                            </div>
+                        </div>
+                        <center><button class="btn btn_indice btn_registro_user">Registrarse</button></center>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn_loguearse" style="width:100%;cursor: pointer;color:#0056b3 ;" data-toggle="modal" data-target="#modal_login">Loguearse</a>
                 </div>
               </div>
             </div>

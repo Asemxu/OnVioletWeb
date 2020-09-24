@@ -20,8 +20,20 @@ var pass_error = document.getElementById("error_pass");
 var form_login = document.getElementById("form_inicio_sesion");
 var container_inputs = document.getElementById("container_inputs");
 var btn_registro_login = document.querySelector(".btn_registro_login");
+var btn_registro = document.querySelector(".btn_registro");
+var btn_loguearse = document.querySelector(".btn_loguearse");
+var btn_registro_user = document.querySelector(".btn_registro_user");
+var nombres_input = document.getElementById("nombres");
+var correo_input_registro = document.getElementById("email_registro");
+var pass_input_registro = document.getElementById("pass_registro");
+var container_inputs_registro = document.getElementById("container_inputs_registro");
+var email_error_registro = document.getElementById("error_email_registro");
+var pass_error_registro = document.getElementById("error_pass_registro");
+var form_registro = document.getElementById("form_registro");
+var type = "";
+var fecha_footer = "© All Rights Reserved";
 
-var fecha_footer = "© All Rights Reserved"; 
+
 const Home = "home.html";
 const Home_user = "home_user.html";
 const About = "about.html";
@@ -34,9 +46,13 @@ const home_style = "home.css";
 const email_bad_format = "auth/invalid-email";
 const email_not_found = "auth/user-not-found";
 const wrong_password = "auth/wrong-password";
+const email_in_use = "auth/email-already-in-use";
+const weak_pass = "auth/weak-password";
 const email_bad_format_error = "El formato de ese correo es invalido";
 const email_not_found_error = "Ese correo no esta registado";
 const wrong_password_error = "La contraseña no es igual"
+const email_in_use_error = "EL Correo ingresado ya esta en uso";
+const pass_weak_error = "La Contraseña es muy débil";
 
 var current_view_number = 4;
 const Home_number = 4;
@@ -59,6 +75,34 @@ Object.entries(link_views).forEach(([key,element])=>{
         CleanLinkViews(number_view);
     });
 });
+
+btn_registro_user.addEventListener('click',function(){
+    if(IsAllRegistro()){
+        type = "registro";
+        event.preventDefault();
+        container_inputs_registro.style.display = "none";
+        this.innerText = "Registrando......"
+        var spinner = document.getElementById("spinner_registro");
+        spinner.style.display = "block";
+        Autentificacion("registro",spinner,this,pass_input_registro.value,correo_input_registro.value);
+    }
+});
+
+function IsAllRegistro(){
+    if(nombres_input.value.length>0&&correo_input_registro.value.length>0&&
+        pass_input_registro.value.length>0)
+        return true;
+    return false;
+}
+
+btn_loguearse.addEventListener('click',()=>{
+    $("#modal_registro").modal("hide");
+});
+
+btn_registro.addEventListener('click',function(){
+    $("#modal_login").modal("hide");
+});
+
 function CleanLinkViews(number_view){
     Object.entries(span_follow).forEach(([key,element])=>{
         element.style.display = "none";
@@ -117,12 +161,13 @@ function CargarVista(file){
 
 btn_inicio.addEventListener('click', function (){
     if(IsAll()){
+        type = "login";
         container_inputs.style.display = "none";
         this.innerText = "Iniciando Sesión......"
         event.preventDefault();
         var spinner = document.getElementById("spinner_login_registro");
         spinner.style.display = "block";
-        Autentificacion(spinner,this,pass_input.value,email.value);
+        Autentificacion("login",spinner,this,pass_input.value,email.value);
     }
 });
 
@@ -132,19 +177,37 @@ function IsAll(){
     return false;
 }
 
-function Autentificacion(spinner,btn,pass,email){
+function Autentificacion(type,spinner,btn,pass,email){
     const auth = firebase.auth();
-    auth.signInWithEmailAndPassword(email, pass).then(function(value) {
-        container_inputs.style.display = "block";
-        spinner.style.display = "none";
-        email_error.innerText = "";
-        pass_error.innerText = "";
-        form_login.reset();
-        $("#modal_login").modal("hide");
-      }).catch(function(error) {
-        btn.innerText = "INICIAR SESIÓN";
-        SetErrors(error.code);
-      });       
+    if(type === "login"){
+        auth.signInWithEmailAndPassword(email, pass).then(function(value) {
+            container_inputs.style.display = "block";
+            spinner.style.display = "none";
+            email_error.innerText = "";
+            pass_error.innerText = "";
+            form_login.reset();
+            type = "login";
+            $("#modal_login").modal("hide");
+        }).catch(function(error) {
+            container_inputs.style.display = "block";
+            spinner.style.display = "none";
+            btn.innerText = "INICIAR SESIÓN";
+            SetErrors(error.code);
+        });       
+    }else{
+        auth.createUserWithEmailAndPassword(email, pass).then(function(value) {
+            container_inputs_registro.style.display = "block";
+            spinner.style.display = "none";
+            email_error_registro.innerText = "";
+            pass_error_registro.innerText = "";
+            $("#modal_registro").modal("hide");
+          }).catch(function(error) {
+            container_inputs_registro.style.display = "block";
+            spinner.style.display = "none";
+            btn.innerText = "Registrarse";
+            SetErrors(error.code);
+          });       
+    }
 }
 function GetDataNombres(value){
     firebase.database()
@@ -161,7 +224,6 @@ function LoadHomeUser(style,view){
     CargarVista(CarpetaViews+view);
 }
 function SetErrors(error_code){
-    
     switch(error_code){
         case email_bad_format:
             email_error.innerText = email_bad_format_error;
@@ -175,6 +237,14 @@ function SetErrors(error_code){
             pass_error.innerText = wrong_password_error; 
             email_error.innerText = "";
             break;
+        case email_in_use:
+            email_error_registro.innerText = email_in_use_error;
+            pass_error_registro.innerText = "";
+            break; 
+        case weak_pass:
+            email_error_registro.innerText = "";
+            pass_error_registro.innerText = pass_weak_error;
+            break;
     }
 }
 
@@ -183,7 +253,14 @@ firebase.auth().onAuthStateChanged(function(user) {
         current_view_number = Home_user_number;
         btn_registro_login.style.display = "none";
         link_views[current_view_number-1].setAttribute("value","5");
-        GetDataNombres(user.uid)
+        if(type === "login") 
+            GetDataNombres(user.uid)
+        else {
+            var data = localStorage.getItem("Nombres");
+            if(data===null)
+                SetDataUser(user.uid);  
+            LoadHomeUser(home_user_style,Home_user);      
+        }
     }else{
         current_view_number = Home_number;
         sleep(500).then(() => {
@@ -192,6 +269,13 @@ firebase.auth().onAuthStateChanged(function(user) {
         });
     }
 });
+
+function SetDataUser(uid){
+    user = {"contraseña":pass_input_registro.value,"correo":correo_input_registro.value,
+            "nombres":nombres_input.value};
+    firebase.database().ref('users/' + uid).set(user);
+    localStorage.setItem("Nombres",nombres_input.value);
+}
 
 function AddScript(){
     let myScript = document.createElement("script");

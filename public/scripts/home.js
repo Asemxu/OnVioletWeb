@@ -1,7 +1,9 @@
 
 //window.history.pushState(null,"","home");
-const btn_indice = document.querySelector(".btn_indice");
-const duration = 750;
+const btn_indice = document.querySelector("#ir_indice");
+const btn_porque = document.querySelector("#ir_porque");
+const btn_descarga = document.querySelector("#ir_descarga");
+const duration = 1000;
 var cards_header = document.getElementsByClassName("card-header");
 var show_bajo = false;
 var show_moderado = false;
@@ -11,6 +13,18 @@ var show_extremo = false;
 btn_indice.addEventListener('click',function(){
     $('html, body').animate({
         scrollTop: $(".indice_uv").offset().top
+      },
+      duration);
+});
+btn_porque.addEventListener('click',function(){
+    $('html, body').animate({
+        scrollTop: $(".list_beneficios").offset().top
+      },
+      duration);
+});
+btn_descarga.addEventListener('click',function(){
+    $('html, body').animate({
+        scrollTop: $(".app_mobile").offset().top
       },
       duration);
 });

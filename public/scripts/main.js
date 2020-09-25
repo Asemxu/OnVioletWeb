@@ -33,9 +33,10 @@ var form_registro = document.getElementById("form_registro");
 var type = "";
 var fecha_footer = "© All Rights Reserved";
 var options = document.querySelector(".options");
-
+var link_politica = document.getElementById("link_politica");
 
 const Home = "home.html";
+const Politica = "politica.html"
 const Home_user = "home_user.html";
 const About = "about.html";
 const Contact = "contactanos.html";
@@ -61,8 +62,9 @@ const About_number = 0;
 const Contact_number = 1;
 const Faq_number = 2;
 const Help_number = 3;
+const Politica_numer = 6;
 const Home_user_number = 5;
-const Views_html = [About,Faq,Contact,Help,Home,Home_user];
+const Views_html = [About,Faq,Contact,Help,Home,Home_user,Politica];
 
 const firebaseConfig={apiKey:"AIzaSyBeRXgPHpwxDOqAC8ww5KcL65vhl3_HU_U",authDomain:"radiacionuv-8196c.firebaseapp.com",databaseURL:"https://radiacionuv-8196c.firebaseio.com",projectId:"radiacionuv-8196c",storageBucket:"radiacionuv-8196c.appspot.com",messagingSenderId:"478377739382",appId:"1:478377739382:web:10da4d5a894c5a37e7cb57",measurementId:"G-4K1SEQ7JX4"};
 firebase.initializeApp(firebaseConfig);
@@ -292,4 +294,11 @@ function AddScript(){
     document.body.appendChild(myScript);
 }
 
-
+link_politica.addEventListener('click',function(){
+    Object.entries(span_follow).forEach(([key,element])=>{
+        element.style.display = "none";
+    }); 
+    current_view_number = Politica_numer;
+    AddScript();
+    CargarVista(CarpetaViews+Politica);
+});

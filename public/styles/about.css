@@ -1,0 +1,11 @@
+.respuestas_about{
+    margin:7.5%
+}
+.respuestas_about h3{
+    font-weight: 1000;
+    margin-bottom: 30px;
+}
+.respuestas_about p{
+    letter-spacing: 1px;
+    text-align: justify;
+}

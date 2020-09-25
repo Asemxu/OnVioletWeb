@@ -292,3 +292,11 @@ footer{
 #img_main{
     cursor: pointer;
 }
+
+.policity > a{
+    cursor: pointer;
+}
+#link_politica:hover{
+    color:#007bff;
+}
+

@@ -1,0 +1,30 @@
+.texto_respuestas .first_parrafo{
+    text-align: center;
+    margin-top: 50px;
+}
+.texto_respuestas h3{
+    font-weight: 1000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.texto_respuestas p{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.texto_respuestas p a{
+    color: blue;
+}
+
+#ir_contactanos{
+    width: 100%;
+}
+
+.texto_respuestas center{
+    margin: 50px;
+}

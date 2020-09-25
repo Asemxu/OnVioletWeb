@@ -9,6 +9,6 @@ compartir.addEventListener('click',function(){
             url : "https://radiacionuv-8196c.web.app/"
         })
     }else{
-        alert("Solo disponible en mobile");
+        alert("Solo disponible en versión móvil");
     }
 });

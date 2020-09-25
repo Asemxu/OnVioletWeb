@@ -1,5 +1,5 @@
 .intro-header_contact{
-    height: 100vh;
+    height: 70vh;
     display:flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -40,7 +40,7 @@
     text-align: left;
 }
 .border-primary{
-    border-color: #eee!important;
+    border-color: #C8C8C8!important;
 }
 
 @media screen and (max-width:359px){

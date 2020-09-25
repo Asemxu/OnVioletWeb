@@ -1,0 +1,9 @@
+@media screen and (max-width:537px){
+    .content_help{
+        margin-top: 50px;
+    }
+}
+
+#shareBlock  a span{
+    background-color: transparent!important;
+}

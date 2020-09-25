@@ -7,6 +7,7 @@
     "bootstrap": "^4.5.2",
     "firebase": "^7.21.0",
     "jquery-circle-progress": "^1.2.2",
+    "jquery-plugin-c-share": "^1.1.0",
     "rfs": "^9.0.3"
   },
   "devDependencies": {},

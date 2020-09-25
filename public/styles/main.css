@@ -12,6 +12,7 @@ a{
     padding-top:-10px;
     background-color: #f17c22;
     max-height: 65px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
     
 }
 .btn_indice{

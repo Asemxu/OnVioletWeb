@@ -13,7 +13,6 @@ function InsertName(){
     titulo_bienvenido.innerText = "Bienvenido "+localStorage.getItem("Nombres");
 }
 btn_logout.addEventListener('click',function(){
-    var scripts = document.getElementsByClassName("injected");
     sleep(500).then(() => {
         firebase.auth().signOut().then(function() {
             location.reload();

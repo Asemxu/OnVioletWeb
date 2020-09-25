@@ -32,6 +32,19 @@
     .intro__content > h3 {
         font-size: 1rem;
     }
+    .intro__content > h2{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:280px){
+    .intro__content{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:250px){
+    .intro__content{
+        margin-top: 50px;
+    }
 }
 
 .btn_indice:hover{

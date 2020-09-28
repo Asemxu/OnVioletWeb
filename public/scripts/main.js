@@ -31,7 +31,7 @@ var email_error_registro = document.getElementById("error_email_registro");
 var pass_error_registro = document.getElementById("error_pass_registro");
 var form_registro = document.getElementById("form_registro");
 var type = "";
-var fecha_footer = "© All Rights Reserved";
+var fecha_footer = "© Todos los derechos reservados";
 var options = document.querySelector(".options");
 var link_politica = document.getElementById("link_politica");
 

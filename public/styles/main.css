@@ -300,3 +300,8 @@ footer{
     color:#007bff;
 }
 
+@media screen and (min-width: 765px){
+    .overlay{
+        background: transparent;
+    }
+}

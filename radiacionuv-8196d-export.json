@@ -1,0 +1,113 @@
+{
+  "Niveles_Arduino" : {
+    "Nivel" : 0
+  },
+  "Recomendaciones" : {
+    "Alto" : [ null, {
+      "descripcion" : "Reduzca el tiempo al sol entre las 10 a. m y las 4 p. m.",
+      "imagen" : "https://fotos.subefotos.com/a197ea2558149b0949f5e1385a836f8co.png",
+      "titulo" : "Menos Tiempo"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV.",
+      "imagen" : "https://fotos.subefotos.com/35f259c6c4ac3cb53e39e067422d1aa4o.png",
+      "titulo" : "Protegerse siempre es Importante"
+    }, {
+      "descripcion" : "plíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Mucho Mas Bloqueador"
+    } ],
+    "Bajo" : [ null, {
+      "descripcion" : "Puedes estar al aire libre con mínima protección",
+      "imagen" : "https://fotos.subefotos.com/556c7865ca0676e3f456a54ae411baf0o.png",
+      "titulo" : "No te preocupes"
+    }, {
+      "descripcion" : "Utilice anteojos de sol los días de sol brillante.",
+      "imagen" : "https://fotos.subefotos.com/2b4ac92d8c8edb4db17eea4643cf7ff0o.png",
+      "titulo" : "Lentes en el Día"
+    }, {
+      "descripcion" : "Si se quema con facilidad, cúbrase y use un protector solar de amplio espectro SPF 30+.",
+      "imagen" : "https://fotos.subefotos.com/ccde62628d782858f444eb9a39800420o.png",
+      "titulo" : "Usa Bloqueador"
+    }, {
+      "descripcion" : "Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/7507722d1c6f751e3e6561a961c11cc7o.png",
+      "titulo" : "Superficies Brillantes"
+    } ],
+    "Extremo" : [ null, {
+      "descripcion" : "Como los niveles de radiación son muy altos es recomendable salir solo si es necesario",
+      "imagen" : "https://fotos.subefotos.com/b2f6c8c531c0af325fcb585aa3181496o.png",
+      "titulo" : "Solo si es necesario"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV",
+      "imagen" : "https://fotos.subefotos.com/35f259c6c4ac3cb53e39e067422d1aa4o.png",
+      "titulo" : "Use aun mas protección"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Tu Piel es Muy Importante Cuídala"
+    } ],
+    "Moderado" : [ null, {
+      "descripcion" : "Permanezca a la sombra cerca del mediodía, cuando el sol está más fuerte.",
+      "imagen" : "https://fotos.subefotos.com/74b11a459e97ddef5956743419ac3ddeo.png",
+      "titulo" : "Áreas Sombrías"
+    }, {
+      "descripcion" : "Si está al aire libre, utilice ropa de protección, un sombrero de ala ancha, gorros  y gafas de sol que bloqueen los rayos UV.",
+      "imagen" : "https://fotos.subefotos.com/39c6af76b3c248102a43c830a4940c40o.png",
+      "titulo" : "Gorros y Lentes"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/a9212b511fdf09f6f8bbfb7d8e0bf1e5o.png",
+      "titulo" : "Siempre Bloqueador"
+    } ],
+    "Muy_Alto" : [ null, {
+      "descripcion" : "Minimice la exposición al sol entre las 10 a. m. y las 4 p. m.",
+      "imagen" : "https://fotos.subefotos.com/813df8de689c111f677a20f3ce8b2f68o.png",
+      "titulo" : "Menos Tiempo aun"
+    }, {
+      "descripcion" : "Si está al aire libre, busque la sombra y utilice ropa de protección, un sombrero de ala ancha y anteojos de sol que bloqueen los rayos UV",
+      "imagen" : "https://fotos.subefotos.com/35f259c6c4ac3cb53e39e067422d1aa4o.png",
+      "titulo" : "Use aun mas protección"
+    }, {
+      "descripcion" : "Aplíquese generosamente un protector solar de amplio espectro SPF 30+ cada 2 horas, incluso si está nublado, y después de nadar o sudar. Tenga cuidado con las superficies brillantes, como arena, agua y nieve, que reflejan los rayos UV y aumentan la exposición.",
+      "imagen" : "https://fotos.subefotos.com/0801dc66f8e4c86400809187845abdfco.png",
+      "titulo" : "Cuida tu piel"
+    } ]
+  },
+  "users" : {
+    "6wLpU0JASoZGVxkI4dnZOoh5VWe2" : {
+      "contraseña" : "pixel.20",
+      "correo" : "elgoogclass6@gmail.com",
+      "nombres" : "johndoedoe"
+    },
+    "8wYtG3pzScNbrrQxEx8QblEHnKm1" : {
+      "contraseña" : "elki123",
+      "correo" : "elkitest@hotmail.com",
+      "nombres" : "Elki Solano"
+    },
+    "UIdaV5RtNbMgRp0TFm95peC8yii2" : {
+      "contraseña" : "cruzado",
+      "correo" : "acr@Outlook.com",
+      "nombres" : "Alex cruzado Ramírez "
+    },
+    "VQ3GzLIHFfS0k4vtqitxwCqR64B3" : {
+      "contraseña" : "Emsc1234",
+      "correo" : "elkisoft.s3@gmail.com",
+      "nombres" : "Elki Mimar Solano Cueva"
+    },
+    "irQi0cADzSVKqLL2JHt2yHe4OE83" : {
+      "contraseña" : "mifamilia4",
+      "correo" : "renzojimenezalfarotrabajos@gmail.com",
+      "nombres" : "Renzo Jimenez Alfaro"
+    },
+    "oop0PdJrnfRfIa7dHrqdJmzxbzP2" : {
+      "contraseña" : "ana1234",
+      "correo" : "ana@gmail.com",
+      "nombres" : "Ana Quispe Yeckle"
+    },
+    "wDt89F353PMGR4cIBXeeiEERLGv2" : {
+      "contraseña" : "mifamilia4",
+      "correo" : "prueba@hotmail.com",
+      "nombres" : "Jorgue Morales"
+    }
+  }
+}
